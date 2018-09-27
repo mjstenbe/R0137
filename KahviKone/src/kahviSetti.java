@@ -1,8 +1,7 @@
 import java.util.Scanner;
 import java.lang.Math;
-
 public class kahviSetti {
-	
+						// @author Santeri Kilpeläinen
 	
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
@@ -28,25 +27,25 @@ public class kahviSetti {
 		
 		// Tilausten suoritus
 		if (order == 1 && random > 25) {
-			System.out.println("Odota hetki, kahvianne valmistetaan");
+			System.out.println("Odota hetki, kahvianne valmistetaan...\n");
 			Thread.sleep(1500);
 			omaKone.valmistaKahvi();
 			System.out.println(omaKone);
 			}
 		
 		else if (order == 2 && random > 25) {
-			System.out.println("Odota hetki, teetänne valmistetaan");
+			System.out.println("Odota hetki, teetänne valmistetaan...\n");
 			Thread.sleep(1500);
 			omaKone.valmistaTee();
 			System.out.println(omaKone); }
 		
 		else if (order == 3 && random > 25) {
-			System.out.println("Odota hetki, kaakaotanne valmistetaan");
+			System.out.println("Odota hetki, kaakaotanne valmistetaan...\n");
 			Thread.sleep(1500);
 			omaKone.valmistaKaakao();
 			System.out.println(omaKone); }
 		
-		else if (order == 4 && random > 25) {
+		else if (order == 4) {
 			System.out.println("Sammutetaan");
 			System.out.println("3");
 			Thread.sleep(500);
@@ -57,7 +56,7 @@ public class kahviSetti {
 			break; }
 		
 		else if (order < 4 && random <= 25) {
-			System.out.println("Kiitos kahvirahoistasi, kone tilttasi. Error code: " + random);
+			System.out.println("Kiitos kahvirahoistasi, kone tilttasi. Error code: " + random + "\n");
 			Thread.sleep(500);
 			System.out.println("Käynnistetään uudelleen");
 			Thread.sleep(500);

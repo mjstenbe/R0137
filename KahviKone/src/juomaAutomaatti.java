@@ -1,4 +1,3 @@
-import java.math.*;
 public class juomaAutomaatti {
 							// @author Santeri Kilpeläinen
  private int teetä;
@@ -68,11 +67,6 @@ public class juomaAutomaatti {
 				System.out.println("Kaakaonne on valmis. Kaakaota jäljellä " + this.kaakaota + " yksikköä.");
 				}
 
-		//Tilttaus  
-		public boolean onnistuuko() {
-			int luku = (int)(Math.random() * 100+1);
-			return false;
-		}
 		
 		// toString()
 		@Override
